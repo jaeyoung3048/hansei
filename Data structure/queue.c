@@ -21,3 +21,30 @@ int ADD(int value){
     QUEUE[rear]=value;
     return true;
 }
+
+int DELETE(){
+    if(front>=rear){
+        printf("QUEUE UNDETFLOW!!\n");
+        return false;
+    }
+    front++;
+    printf("DELETE: %d\n", QUEUE[front]);
+    return true;
+}
+
+void PRINT(){
+    int i;
+    for(i=front+1; i<=rear; i++){
+        printf("QUEUE[%d]= %d\n", i, QUEUE[i]);
+    }
+}
+
+int main(){
+    ADD(10);
+    ADD(20);
+    ADD(30);
+    PRINT();
+    DELETE();
+    ADD(40);
+    PRINT();
+}

@@ -37,7 +37,7 @@ void _print(){
 }
 
 
-
+/*
 int main(int argc, const char * argv[]) {
     PUSH(1);
     PUSH(2);
@@ -48,3 +48,4 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
+*/
