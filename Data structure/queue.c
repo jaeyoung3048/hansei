@@ -10,7 +10,7 @@
 #include <stdbool.h>
 #define MAX 10
 int QUEUE[MAX] = {0};
-int front = 1, rear=-1;
+int front = -1, rear=-1;
 
 int ADD(int value){
     if(rear >= MAX-1){
@@ -34,11 +34,11 @@ int DELETE(){
 
 void PRINT(){
     int i;
-    for(i=front+1; i<=rear; i++){
-        printf("QUEUE[%d]= %d\n", i, QUEUE[i]);
-    }
+    for(i=front+1; i<=rear; i++)
+    printf("QUEUE[%d]= %d\n", i, QUEUE[i]);
 }
 
+/*
 int main(){
     ADD(10);
     ADD(20);
@@ -48,3 +48,4 @@ int main(){
     ADD(40);
     PRINT();
 }
+*/

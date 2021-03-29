@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE22AF7F26114FA900203005 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = AE22AF7E26114FA900203005 /* list.c */; };
 		AE36C408260421600039E6C2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = AE36C407260421600039E6C2 /* main.c */; };
 		AEE92519260971F800AF06C3 /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = AEE92518260971F800AF06C3 /* queue.c */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AE22AF7E26114FA900203005 /* list.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
 		AE36C404260421600039E6C2 /* Data structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Data structure"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE36C407260421600039E6C2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		AEE92517260971F800AF06C3 /* queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				AE36C407260421600039E6C2 /* main.c */,
 				AEE92517260971F800AF06C3 /* queue.h */,
 				AEE92518260971F800AF06C3 /* queue.c */,
+				AE22AF7E26114FA900203005 /* list.c */,
 			);
 			path = "Data structure";
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE22AF7F26114FA900203005 /* list.c in Sources */,
 				AE36C408260421600039E6C2 /* main.c in Sources */,
 				AEE92519260971F800AF06C3 /* queue.c in Sources */,
 			);
