@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE22AF7F26114FA900203005 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = AE22AF7E26114FA900203005 /* list.c */; };
 		AE36C408260421600039E6C2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = AE36C407260421600039E6C2 /* main.c */; };
-		AEE92519260971F800AF06C3 /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = AEE92518260971F800AF06C3 /* queue.c */; };
+		AECD989B261693CF00CCB686 /* list_to_stack.c in Sources */ = {isa = PBXBuildFile; fileRef = AECD989A261693CF00CCB686 /* list_to_stack.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,11 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AE22AF7E26114FA900203005 /* list.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
 		AE36C404260421600039E6C2 /* Data structure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Data structure"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE36C407260421600039E6C2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		AEE92517260971F800AF06C3 /* queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
-		AEE92518260971F800AF06C3 /* queue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = queue.c; sourceTree = "<group>"; };
+		AECD989A261693CF00CCB686 /* list_to_stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = list_to_stack.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				AE36C407260421600039E6C2 /* main.c */,
-				AEE92517260971F800AF06C3 /* queue.h */,
-				AEE92518260971F800AF06C3 /* queue.c */,
-				AE22AF7E26114FA900203005 /* list.c */,
+				AECD989A261693CF00CCB686 /* list_to_stack.c */,
 			);
 			path = "Data structure";
 			sourceTree = "<group>";
@@ -126,9 +121,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE22AF7F26114FA900203005 /* list.c in Sources */,
 				AE36C408260421600039E6C2 /* main.c in Sources */,
-				AEE92519260971F800AF06C3 /* queue.c in Sources */,
+				AECD989B261693CF00CCB686 /* list_to_stack.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +184,10 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -242,6 +240,10 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;

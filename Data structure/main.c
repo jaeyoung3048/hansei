@@ -5,6 +5,7 @@
 //  Created by 홍재영 on 2021/03/19.
 //
 
+/*
 #include <stdio.h>
 #define STACK_SIZE 5
 #include <stdbool.h>
@@ -37,7 +38,7 @@ void _print(){
 }
 
 
-/*
+
 int main(int argc, const char * argv[]) {
     PUSH(1);
     PUSH(2);

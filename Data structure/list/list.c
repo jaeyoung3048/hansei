@@ -65,6 +65,7 @@ NODE* Search(NODE* pointer, int value){
     return NULL;
 }
 
+/*
 int main(int argc, const char * argv[]) {
     
     Insert(phead, p, 10);
@@ -82,3 +83,4 @@ int main(int argc, const char * argv[]) {
     return 0;
     
 }
+*/
